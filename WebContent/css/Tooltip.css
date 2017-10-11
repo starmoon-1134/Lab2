@@ -1,0 +1,41 @@
+.tooltipinputerr {
+	BORDER-RIGHT: #eee 2px solid; 
+	BORDER-TOP: #eee 2px solid; 
+	BACKGROUND: url(../images/exclamation.png) no-repeat right center !important; 
+	BORDER-LEFT: #eee 2px solid; BORDER-BOTTOM: #eee 2px solid
+}
+.tooltipinputok {
+	BORDER-RIGHT: green 2px solid; 
+	BORDER-TOP: green 2px solid; 
+	BACKGROUND: url(../images/accept.png) no-repeat right center !important; 
+	BORDER-LEFT: green 2px solid; BORDER-BOTTOM: green 2px solid
+}
+.leftImage {
+	BACKGROUND: url(../images/x1.gif) no-repeat right top; 
+	WIDTH: 14px; 
+	HEIGHT: 33px
+}
+.rightImage {
+	BACKGROUND: url(../images/x3.gif) no-repeat left top; 
+	WIDTH: 6px; 
+	HEIGHT: 33px
+}
+.contenImage {
+	PADDING-RIGHT: 10px;
+	 FONT-SIZE: 12px; 
+	 BACKGROUND: url(../images/x2.gif) 50% top; 
+	 TEXT-INDENT: 5px; 
+	 LINE-HEIGHT: 36px; 
+	 FONT-FAMILY: Arial;
+	  HEIGHT: 33px
+}
+.tableTip {
+	DISPLAY: none; 
+	FILTER: alpha(opacity=90); 
+	OVERFLOW: hidden; 
+	POSITION: absolute; 
+	BORDER-COLLAPSE: collapse;
+	empty-cells: hide; 
+	opacity: 0.9;
+	z-index:999
+}

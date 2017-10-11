@@ -1,0 +1,201 @@
+body{
+	font-family:"Times New Roman", Times, serif;
+}
+
+.cut-off{
+	overflow:hidden;
+	position:relative;
+	width:0px;
+	height:18em;
+	text-align:center;
+	top:50px;
+	border:#aaa 2px solid;
+	border-radius:2px;
+	-webkit-border-radius: 2px;
+	-moz-border-border-radius: 2px;
+	display:inline-block;
+		float:left;
+	margin-left:10px;
+	-moz-opacity:0.6;
+    opacity:0.6;
+    visibility:hidden;
+}
+
+
+.addBookContainer{
+	height:70%;
+	width:95%;
+	margin:0 auto;
+	text-align:center;
+}
+
+
+/* From Tooltip.css   */
+.tooltipinputerr {
+	BORDER-RIGHT: #eee 2px solid; 
+	BORDER-TOP: #eee 2px solid; 
+	BACKGROUND: url(../images/exclamation.png) no-repeat right center !important; 
+	BORDER-LEFT: #eee 2px solid; BORDER-BOTTOM: #eee 2px solid
+}
+.tooltipinputok {
+	BORDER-RIGHT: green 2px solid; 
+	BORDER-TOP: green 2px solid; 
+	BACKGROUND: url(../images/accept.png) no-repeat right center !important; 
+	BORDER-LEFT: green 2px solid; BORDER-BOTTOM: green 2px solid
+}
+.leftImage {
+	BACKGROUND: url(../images/x1.gif) no-repeat right top; 
+	WIDTH: 14px; 
+	HEIGHT: 33px
+}
+.rightImage {
+	BACKGROUND: url(../images/x3.gif) no-repeat left top; 
+	WIDTH: 6px; 
+	HEIGHT: 33px
+}
+.contenImage {
+	PADDING-RIGHT: 10px;
+	 FONT-SIZE: 12px; 
+	 BACKGROUND: url(../images/x2.gif) 50% top; 
+	 TEXT-INDENT: 5px; 
+	 LINE-HEIGHT: 36px; 
+	 FONT-FAMILY: Arial;
+	  HEIGHT: 33px
+}
+.tableTip {
+	DISPLAY: none; 
+	FILTER: alpha(opacity=90); 
+	OVERFLOW: hidden; 
+	POSITION: absolute; 
+	BORDER-COLLAPSE: collapse;
+	empty-cells: hide; 
+	opacity: 0.7;
+	-moz-opacity:0.7;
+	z-index:999
+}
+
+/*   From alterBook.css */
+
+
+.smart-green {
+	position:relative;
+	text-align:center;
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	background-color:rgba(66,66,66,0.3);
+	border-top-left-radius:30px;
+	border-top-right-radius:300px;
+	border-bottom-right-radius:30px;
+	border-bottom-left-radius:300px;
+//max-width: 500px;
+//background: #5b5b5b;
+//padding: 30px 30px 20px 30px;
+font: 12px Arial, Helvetica, sans-serif;
+color: #eee;
+//border-radius: 5px;
+//-webkit-border-radius: 5px;
+//-moz-border-radius: 5px;
+}
+.smart-green h1 {
+font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+padding: 20px 0px 20px 40px;
+display: block;
+margin: -30px -30px 10px -30px;
+color: #FFF;
+background: #9DC45F;
+text-shadow: 1px 1px 1px #71b5b7;
+border-radius: 5px 5px 0px 0px;
+-webkit-border-radius: 5px 5px 0px 0px;
+-moz-border-radius: 5px 5px 0px 0px;
+border-bottom:1px solid #89AF4C;
+}
+.smart-green h1>span {
+display: block;
+font-size: 11px;
+color: #FFF;
+}
+.smart-green label {
+display: block;
+margin: 0px 0px 5px;
+}
+.smart-green label>span {
+float: left;
+margin-top: 10px;
+color: #5E5E5E;
+}
+.smart-green input{
+color: #000000;
+height: 30px;
+line-height:30px;
+width: 16em;
+padding: 0px 0px 0px 10px;
+margin-top: 7px;
+border: 1px solid #E5E5E5;
+background-color: transparent;
+outline: 0;
+-webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+
+
+.smart-green .button {
+background-color: #9DC45F;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-border-radius: 5px;
+border: none;
+padding: 10px 25px 10px 25px;
+color: #FFF;
+text-shadow: 1px 1px 1px #949494;
+margin:10px 10px;
+width:120px;
+height:40px;
+display:block;
+position:absolute;
+left:330px;
+top:260px;
+font-size:18px;
+}
+.smart-green .button:hover {
+background-color:#80A24A;
+}
+
+.smart-green table{
+	-moz-opacity:0.6;
+    opacity:0.6;
+	position:relative;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:70px;
+	margin-bottom:5px;
+	padding:10px 10px;
+	width:auto;
+	color:#000;
+	font-size:17px;
+	display:inline-block;
+	float:left;
+}
+
+.smart-green th{
+	text-align:left;
+	width:5em;
+}
+
+.smart-green td{
+	text-align:left;
+}
+
+.clearen:after{
+	clear:both;
+}
+
+.tableContainer{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	padding:0;
+}
+

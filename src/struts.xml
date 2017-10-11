@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<include file="struts-default.xml"/>
+<package name="BookQuery" namespace="/" extends="struts-default" >
+
+
+	<!-- <action name="addBook" class="BookQuery.Book" method="addBook">
+	            <result name="success">/jsp/addSuccess.jsp</result>
+	            <result name="addExisted">/jsp/addExisted.jsp</result></action>  
+	
+	<action name="HelloWorld" class="BookQuery.HelloWorld">
+				<result name="success">/jsp/indexold.jsp</result></action>
+	
+	<action name="delete" class="BookQuery.HelloWorld" method="delete">
+				<result name="success">/jsp/indexold.jsp</result></action>   --> 
+				
+	<action name="indexJSP" class="BookQuery.BookInfo" method="execute">
+				<result name="success">/jsp/index.jsp</result></action>
+				
+	<action name="addBookJSP" class="BookQuery.BookInfo" method="execute">
+				<result name="success">/jsp/addBook.jsp</result></action>			
+</package>
+
+
+<package name="resultJson" namespace="/" extends="json-default">
+    <action name="queryBook" class="BookQuery.Book" method="queryBook">
+		<!-- <result name="success">/jsp/addSuccess.jsp</result>  -->	
+		<result type="json" name="success">  
+			<param name="root">resultString</param>
+		</result>
+		<result type="json" name="error"> 
+			<param name="root">resultString</param>
+		</result>
+	</action>
+	
+	<action name="delBook" class="BookQuery.Book" method="delBook">
+		<!-- <result name="success">/jsp/addSuccess.jsp</result>  -->	
+		<result type="json" name="success">  
+			<param name="root">resultString</param>
+		</result>
+		<result type="json" name="error"> 
+			<param name="root">resultString</param>
+		</result>
+	</action>
+	
+	<action name="delAuthor" class="BookQuery.Book" method="delAuthor">
+		<!-- <result name="success">/jsp/addSuccess.jsp</result>  -->	
+		<result type="json" name="success">  
+			<param name="root">resultString</param>
+		</result>
+		<result type="json" name="error"> 
+			<param name="root">resultString</param>
+		</result>
+	</action>
+	
+	<action name="alterBook" class="BookQuery.Book" method="alterBook">
+		<!-- <result name="success">/jsp/addSuccess.jsp</result>  -->	
+		<result type="json" name="success">  
+			<param name="root">resultString</param>
+		</result>
+		<result type="json" name="error"> 
+			<param name="root">resultString</param>
+		</result>
+	</action>
+	
+	<action name="addBook" class="BookQuery.Book" method="addBook">
+		<!-- <result name="success">/jsp/addSuccess.jsp</result>  -->	
+		<result type="json" name="success">  
+			<param name="root">resultString</param>
+		</result>
+		<result type="json" name="error"> 
+			<param name="root">resultString</param>
+		</result>
+	</action>
+	
+ </package>
+</struts>

@@ -1,0 +1,339 @@
+iframe.showBook{
+	frameboder:0;/*边框维数是为为3维 否 */
+	position: relative;
+	top:0;
+	left:0;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	sandbox:allow-same-origin;
+	noresize:noresize;/*禁止改变大小*/
+	width:100%;
+    height:100%;
+}
+
+div.showBook-container{
+	position:relative;
+	left:0;
+	top:0;
+	z-index:2;
+	width:85%;
+    height:100%;
+    margin:0 auto;
+}
+
+#fh5co-page {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-image: url(../images/tmp.jpg); /*url(../images/myPage5.jpg);*/
+  background-size:100% 100%;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto; 
+  z-index:1;
+}
+
+
+
+#back-layer-2{
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0px; 
+  width:100%;
+  height:100%;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  z-index:2;
+}
+
+.nav-header {
+  margin-top: 0.2em;
+  position: relative;
+  left:0;
+  width: 100%;
+  height:100%;
+  text-align: center;
+}
+
+.container {
+  /*background-image: url(../images/myPage5.jpg);
+  background-size:100% 100%;*/
+  position:relative;
+  left:0;
+  top:0;
+  margin: 0px;
+  //fborder:5px solid red;
+  height:14%;
+  width:100%;
+  z-index:2;
+  padding-left:5em;
+  padding-right:5em;
+}
+
+
+.fh5co-underHeader{
+	position: relative;
+	left:0;
+	width:100%;
+	z-index:2;
+    //height: 86%;
+    height: 76%;
+	min-height:500px;
+}
+
+
+
+
+#fh5co-header-section {
+  padding: 0;
+ /* position: absolute;*/
+ position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+
+#fh5co-logo {
+  position:relative;
+  z-index: 2;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  float: right;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right:10%;
+   
+}
+#fh5co-logo a {
+  position: relative;
+  text-decoration:none;
+}
+#fh5co-logo a:after {
+  position: absolute;
+  display:block;
+  content: '';
+  top: -5px;
+  left: -9px;
+  background: #DA1212;
+  width: 10px;
+  height: 10px;
+}
+#fh5co-logo span {
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+  color:#ff33aa;
+  cursor:crosshair;
+  font:italic bold 28px/30px Georgia,serif;
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-logo {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+#fh5co-logo a {
+  color: #fff;
+}
+#fh5co-logo a:hover, #fh5co-logo a:focus {
+  color: #fff !important;
+  text-decoration:none;
+}
+
+/*背景层*/
+.fh5co-overlay {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn.btn-primary {
+  position:relative;
+  top:0;
+  diplay:block;
+  background: #4CB648;
+  color: #fff;
+  border: none !important;
+  border: 2px solid transparent !important;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+  box-shadow: none;
+  background: #4CB648;
+  color: #fff !important;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background: #393e46 !important;
+  color: #fff !important;
+  outline: none !important;
+}
+.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+  border-color: transparent;
+}
+
+
+.sf-menu {
+  float : left;
+  margin: 0 !important;
+}
+
+.sf-menu {
+  float: right;
+}
+
+.sf-menu ul {
+  box-shadow: none;
+  border: transparent;
+  min-width: 12em;
+  *width: 12em;
+}
+
+.sf-menu a {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0.75em 1em !important;
+  font-weight: normal;
+  border-left: none;
+  border-top: none;
+  border-top: none;
+  text-decoration: none;
+  zoom: 1;
+  font-size: 28px;
+  border-bottom: none !important;
+  
+}
+.sf-menu a:hover, .sf-menu a:focus {
+  color: #fff !important;
+}
+
+.sf-menu li.active a:hover, .sf-menu li.active a:focus {
+  color: #fff;
+}
+
+.sf-menu li,
+.sf-menu ul li,
+.sf-menu ul ul li,
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+  background: transparent;
+}
+
+.sf-menu ul li a,
+.sf-menu ul ul li a {
+  text-transform: none;
+  padding: 0.25em 1em !important;
+  letter-spacing: 1px;
+}
+
+.sf-menu li:hover a,
+.sf-menu li.sfHover a,
+.sf-menu ul li:hover a,
+.sf-menu ul li.sfHover a,
+.sf-menu li.active a {
+  color: #fff;
+}
+
+.sf-menu ul li:hover,
+.sf-menu ul li.sfHover {
+  background: transparent;
+}
+
+.sf-menu ul li {
+  background: transparent;
+}
+
+#fh5co-menu-wrap {
+  position: relative;
+  z-index: 2;
+  display: block;
+  float: left;
+}
+
+
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sf-menu li {
+	position: relative;
+}
+.sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	right: 0;
+	
+	z-index: 99;
+}
+.sf-menu > li {
+	float: left;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+	display: block;
+}
+
+.sf-menu a {
+	display: block;
+	position: relative;
+}
+.sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+body{text-align:center}
+
+/*
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}  */
+
