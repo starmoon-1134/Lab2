@@ -1,0 +1,1 @@
+mysql连接配置在SqlCon.java的21行附近

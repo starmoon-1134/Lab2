@@ -14,14 +14,14 @@ public class SqlCon {
 	public SqlCon() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");// 连接驱动
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test2f" + "?useUnicode=true"
-					+ "&characterEncoding=utf-8" + "&useSSL=false", "TestUser", "123456");//
-			// 连接数据库
-			// con = DriverManager.getConnection(
-			// "jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xhybookmanger1206" +
+			// con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test2f" +
 			// "?useUnicode=true"
-			// + "&characterEncoding=utf-8" + "&useSSL=false",
-			// "x0w3nwxzmn", "m35l3h11w4yh2l52zkxyiiwyyw2kj22l33yjx0zl");
+			// + "&characterEncoding=utf-8" + "&useSSL=false", "TestUser", "123456");//
+			// 连接数据库
+			con = DriverManager.getConnection(
+					"jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xhybookmanger1206" + "?useUnicode=true"
+							+ "&characterEncoding=utf-8" + "&useSSL=false",
+					"x0w3nwxzmn", "m35l3h11w4yh2l52zkxyiiwyyw2kj22l33yjx0zl");
 			stat = con.createStatement();
 		} catch (Exception e) {
 			con = null;
